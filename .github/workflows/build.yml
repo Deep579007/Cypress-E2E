@@ -11,8 +11,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
 
-  name: Cypress Test Report
-  -uses: actions/upload-artifact@v4
-   with:
-    name: Mochawesome HTML Report
-    path: cypress/reports/html
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+           name: Mochawesome HTML Report
+           path: cypress/reports/html
